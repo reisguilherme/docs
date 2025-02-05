@@ -1,2 +1,2 @@
-# macall-docs
+# docs
 Uma mao na roda
