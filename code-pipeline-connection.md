@@ -50,39 +50,8 @@ Antes de começar, certifique-se de ter:
 
     ![image](https://github.com/user-attachments/assets/083398d4-ef11-42cd-b6b3-d7ce7aa9c00c)
 
-10. Clique em **Create connection** (Criar conexão) e/ou **Connect**.
+8. Clique em **Create connection** (Criar conexão) e/ou **Connect**.
 
-> **Nota:** Anote o nome da conexão, pois ele será usado na configuração do pipeline.
-
----
-
-### 2. Criar um Pipeline e Configurar a Fonte do Repositório
-
-1. No console do **AWS CodePipeline**, clique em **Create pipeline** (Criar pipeline).
-2. Dê um nome ao pipeline e clique em **Next** (Próximo).
-3. Em **Source provider** (Provedor de origem), selecione **CodeStar Connections**.
-4. Escolha a conexão criada anteriormente.
-5. Selecione o repositório e o branch que deseja usar como origem.
-6. Clique em **Next** (Próximo) para continuar a configurar as etapas do pipeline (build, deploy, etc.).
-
----
-
-## Dicas e Boas Práticas
-
-- Certifique-se de que as permissões do repositório permitem acesso ao aplicativo AWS CodePipeline.
-- Para repositórios privados, configure as credenciais de acesso (tokens ou chaves SSH) corretamente.
-- Use **IAM roles** para restringir permissões e melhorar a segurança.
-- Teste a conexão antes de implementar o pipeline completo.
-
----
-
-## Resolução de Problemas
-
-### Erro: "Permission Denied"
-- Verifique se o token ou a autorização para o repositório está configurado corretamente.
-
-### Erro: "Connection Not Found"
-- Certifique-se de que a conexão foi criada no mesmo região em que o pipeline está sendo configurado.
 
 ---
 
@@ -92,6 +61,3 @@ Antes de começar, certifique-se de ter:
 - [Conexão com Repositórios Git](https://docs.aws.amazon.com/codepipeline/latest/userguide/connections-github.html)
 - [Boas Práticas de Segurança na AWS](https://aws.amazon.com/pt/architecture/security-identity/)
 
----
-
-Seguindo este guia, você será capaz de configurar uma conexão entre o AWS CodePipeline e seu repositório Git de forma rápida e segura.
